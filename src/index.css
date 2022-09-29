@@ -1,3 +1,12 @@
+@font-face {
+  font-family: mr_VlaShu;
+  src: url("./fonts/20354.otf") format("opentype");
+  }
+  @font-face {
+    font-family: Daray;
+    src: url("./fonts/20786.otf") format("opentype");
+    }
+
 body {
   margin: 0;
   font-family: Aboreto;
@@ -5,6 +14,8 @@ body {
 
 
 nav {
+  font-family:mr_VlaShu;
+  font-size: 1.7rem;
   background-color: rgb(186, 247, 226);
 
 }
@@ -45,9 +56,13 @@ nav .container {
   min-height: 5rem;
   text-align: center;
   font-weight: bold;
+  font-family: Daray;
+  font-size: 1.7rem;
+  letter-spacing: .2rem;
 }
 
 .card-text {
+  
   margin: auto;
   overflow: hidden;
   display: -webkit-box;

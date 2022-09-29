@@ -14,7 +14,7 @@ export default function Header() {
               height="30"
               className="d-inline-block align-top"
             />{' '}
-            ПоискКино
+            ПоисКино
           </Navbar.Brand>
         </Container>
       </Navbar>
