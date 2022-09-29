@@ -6,17 +6,66 @@ body {
 
 nav {
   background-color: rgb(186, 247, 226);
-  
+
 }
+
 nav .container {
   margin: 0;
 }
+
 #dropdown-basic {
-  background-color:  rgb(143, 248, 211);
+  background-color: rgb(143, 248, 211);
 }
-.content{
+
+.content {
   min-height: calc(100vh - 56px - 56px - 65px);
+  min-width: 80vw ;
 }
+
 .container {
-  margin-top: 2rem ;
+  margin-top: 2rem;
+
+}
+
+.card {
+  width: 40vh;
+  margin: 1rem 0;
+  
+}
+
+.card-img-top {
+  height: 50vh;
+
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-text {
+  margin: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-height: 1.3em;
+  height: 4.9em;
+  min-height: 4.9em;
+}
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 30vh;
+  margin: auto;
+}
+.spinner-border {
+  width: 4rem;
+  height: 4rem;
 }

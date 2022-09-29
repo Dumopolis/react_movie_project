@@ -8,7 +8,7 @@ export default function Cards(props) {
         <Container>
         <Row>
             {films.map(film => (
-                 <Card1 key={film.nameRU} {...film}/>
+                 <Card1 key={film.id} {...film}/>
                 
             ))}
             

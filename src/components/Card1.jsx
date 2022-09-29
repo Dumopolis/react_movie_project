@@ -3,18 +3,19 @@ import { Card, Col } from "react-bootstrap";
 
 function Card1(props) {
     const {
-        nameRu: name,
-        posterUrl: poster,
+        name,
+        poster,
         rating,
-        type,
-        ratingVoteCount: popular,
+        // type,
+        // votes: popular,
         description
     } = props
 
     return (
         <Col>
             <Card>
-                <Card.Img variant="top" src={poster} />
+            {(poster === null) ? <Card.Img variant="top" src={`https://placehold.jp/25px/9a9996/ffffff/370x465.png?text=${name}`} />  : (<Card.Img variant="top" src={poster.url} />)}
+                
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
@@ -22,7 +23,7 @@ function Card1(props) {
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                    <small className="text-muted">{rating}</small>
+                    <small className="text-muted">{rating.kp}</small>
                 </Card.Footer>
             </Card>
         </Col>
