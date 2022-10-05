@@ -1,4 +1,4 @@
-import Search from "../components/Search";
+import Search from "../components/SearchRefactor";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
